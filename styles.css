@@ -15,6 +15,15 @@ div.nav-bar {
     background: #304353;
 }
 
+@media (max-width: 675px) {
+    div.nav-bar {
+        flex-direction: column;
+    }
+    div {
+        text-align: center;
+    }
+}
+
 div.logo {
     font-size: 1.5rem;
     color: #bcc3c7;
@@ -42,6 +51,12 @@ ul li a:hover {
     color: #304353;
     background: #fff;
     padding: 0.5rem;
+}
+
+@media (max-width: 675px) {
+    ul.nav-links {
+        flex-direction: column;
+    }
 }
 
 div.hero-section {
@@ -75,6 +90,7 @@ div.hero-content-btn {
     justify-content: center;
     align-items: center;
     padding-top: 2rem;
+    padding-right: 3rem;
 }
 
 div.hero-content-btn a {
@@ -85,6 +101,15 @@ div.hero-content-btn a {
     padding: 10px 30px;
     border-radius: 3px;
     letter-spacing: 2px;
+}
+
+@media (max-width: 425px) {
+    div.hero-content-heading {
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        margin-left: -5rem;
+    }
 }
 
 div.hero-background {
@@ -130,6 +155,24 @@ div.hero-background-pos {
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
 
+@media (max-width: 675px) {
+    div.background {
+        margin-right: 1.1rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.hero-background-pos {
+        display: none;
+    }
+    div.background p {
+        font-weight: bolder;
+        font-size: .5em;
+        padding: 0 0;
+    }
+
+}
+
 div.snapshot-team {
     background: #f0f0f0;
     text-align: center;
@@ -148,6 +191,13 @@ div.snapshot-team p {
     font-size: 1rem;
     letter-spacing: 2px;
     padding-top: 0.8rem;
+}
+
+@media (max-width: 675px) {
+    div.snapshot-team p {
+        font-size: .5rem;
+        letter-spacing: normal;
+    }
 }
 
 div.snapshot-box {
@@ -199,6 +249,13 @@ div.circle {
     background: #bcc3c7;
     margin-top: 2rem;
     
+}
+
+@media (max-width: 675px) {
+    div.snapshot-box-content {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 div.box1 h5 {
@@ -344,4 +401,36 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+
+@media (max-width: 675px) {
+    div.footer {
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.footer-input {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    input[type="email"] {
+        width: 100%;
+    }
+    
+    textarea {
+        width: 100%;
+    }
+
+    div.footer-textarea {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-left: -5px;
+    }
+
 }
